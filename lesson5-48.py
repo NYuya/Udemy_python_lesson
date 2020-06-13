@@ -23,7 +23,7 @@ result = what_is_this('red')
 print(result)
 
 
-print('Lesson 5-50')
+print('Lesson 5-51')
 
 
 def test_func(x, l=None):
@@ -38,3 +38,15 @@ print(r)
 
 r = test_func(100)
 print(r)
+
+
+print('Lesson 5-52')
+
+
+def say_something(word, *args):
+    print('word =', word)
+    for arg in args:
+        print(arg)
+
+
+say_something('Hi!', 'Mike', 'Nance')
