@@ -11,4 +11,4 @@ ranking = {
     "C": 95
 }
 
-print(sorted(ranking, key=ran))
+print(sorted(ranking, key=ranking.get, reverse=True))
