@@ -1,3 +1,4 @@
+from collections import defaultdict
 import builtins
 print('Lesson 6-67')
 
@@ -12,3 +13,22 @@ ranking = {
 }
 
 print(sorted(ranking, key=ranking.get, reverse=True))
+
+
+print('Lesson 6-74 標準ライブラリ')
+s = "fdjsafiewafjdsaeiwfdafke"
+
+d = {}
+for c in s:
+    d.setdefault(c, 0)
+    d[c] += 1
+print(d)
+
+
+d = defaultdict(int)
+
+for c in s:
+    d[c] += 1
+    print(d)
+
+print(d['f'])
